@@ -168,3 +168,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+
+//New script
+const backToTop = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        backToTop.classList.add('opacity-100', 'visible', 'translate-y-0', 'animate-pulse');
+        backToTop.classList.remove('opacity-0', 'invisible', 'translate-y-5');
+    } else {
+        backToTop.classList.add('opacity-0', 'invisible', 'translate-y-5');
+        backToTop.classList.remove('opacity-100', 'visible', 'translate-y-0', 'animate-pulse');
+    }
+});

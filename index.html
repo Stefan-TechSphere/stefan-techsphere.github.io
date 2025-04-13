@@ -1,184 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- header.html -->
-<head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PWT6GL4B');
-    </script>
-    <!-- End Google Tag Manager -->
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-PWT6GL4B');
+        </script>
+        <!-- End Google Tag Manager -->
 
-    <!-- Google Verification -->
-    <meta name="google-site-verification" content="SqLX3IGs5o3K58xzqcvMPqRJeJcTNpsLWPBhrcE3pgY" />
-
-    <!-- Basic Meta -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechSphere Technologies | Home Page</title>
-    <meta name="description" content="TechSphere Technologies (Pty) Ltd - Where technology meets possibility. IT consulting, web development, and secure network solutions." />
-    <meta name="author" content="TechSphere Technologies (Pty) Ltd" />
-
-    <!-- Preconnect Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="icon" href="./assets/favicon.icon" />
-
-    <!-- Open Graph Meta -->
-    <meta property="og:title" content="TechSphere Technologies | Where Technology Meets Possibility" />
-    <meta property="og:description" content="Explore TechSphere Technologies for expert IT consulting, web development, and network solutions." />
-    <meta property="og:image" content="https://www.techspheretechnologies.com/images/social-share.png" />
-    <meta property="og:url" content="https://www.techspheretechnologies.com/" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="TechSphere Technologies | Home Page" />
-    <meta name="twitter:description" content="Explore TechSphere Technologies for expert IT consulting, web development, and network solutions." />
-    <meta name="twitter:image" content="https://www.techspheretechnologies.com/images/social-share.png" />
-
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "TechSphere Technologies (Pty) Ltd",
-            "url": "https://www.techspheretechnologies.com",
-            "logo": "https://www.techspheretechnologies.com/images/logo.png",
-            "description": "TechSphere Technologies provides IT consulting, web development, and secure network solutions for business growth.",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "email": "info@techspheretechnologies.com",
-                "contactType": "Customer Support"
-            },
-            "sameAs": [
-                "https://www.linkedin.com/your-link",
-                "https://www.facebook.com/your-link"
-            ]
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ['Roboto', 'sans-serif'],
+                        orbitron: ['Orbitron', 'sans-serif']
+                    }
+                }
+            }
         }
-    </script>
+        </script>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css" />
-</head>
+        <!-- Google Verification -->
+        <meta name="google-site-verification" content="SqLX3IGs5o3K58xzqcvMPqRJeJcTNpsLWPBhrcE3pgY" />
 
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWT6GL4B"
-        height="0" width="0" style="display:none;visibility:hidden" title=""></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        <!-- Basic Meta -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TechSphere Technologies | Home Page</title>
+        <meta name="description" content="TechSphere Technologies (Pty) Ltd - Where technology meets possibility. IT consulting, web development, and secure network solutions." />
+        <meta name="author" content="TechSphere Technologies (Pty) Ltd" />
 
-    <!-- Navigation -->
-    <nav>
-        <div class="menu-toggle" id="menu-toggle" aria-label="Open menu">&#9776;</div>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <!-- Preconnect Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
-    <!-- Hero Section -->
-    <header class="fade-up">
-        <a href="index.html">
-            <img src="./assets/profile.png" alt="TechSphere Technologies Logo" class="main-logo">
-        </a>
-        <h1>TechSphere Technologies</h1>
-        <h2>Your trusted IT solutions partner.</h2>
-        <p>Innovative solutions, tailored to your business.
-            <br>
-            Elevate your digital world with TechSphere Technologies.
-        </p>
-        <p><strong>Trusted by businesses across South Africa.</strong></p>
-        <a href="contact.html" class="button">Get a Quote</a>
-    </header>
+        <!-- Favicon -->
+        <link rel="icon" type="icon" href="images/favicon.icon" />
 
-    <!-- About Section -->
-    <section class="fade-left">
-        <h2>About Us</h2>
-        <p>At TechSphere Technologies, we are passionate about turning visions into reality. Our expertise spans IT consulting, web development, and robust network solutions crafted for growth and security.</p>
-        <a href="about.html" class="button">Learn More About Us</a>
-    </section>
+        <!-- Open Graph Meta -->
+        <meta property="og:title" content="TechSphere Technologies | Where Technology Meets Possibility" />
+        <meta property="og:description" content="Explore TechSphere Technologies for expert IT consulting, web development, and network solutions." />
+        <meta property="og:image" content="https://www.techspheretechnologies.com/images/social-share.png" />
+        <meta property="og:url" content="https://www.techspheretechnologies.com/" />
+        <meta property="og:type" content="website" />
 
-    <!-- Services Section -->
-    <section class="fade-right">
-        <h2>Our Services</h2>
-        <ul class="custom-list">
-            <li><strong>IT Consulting</strong>: Strategic advice to help your business thrive in a digital-first world.</li>
-            <li><strong>Web Development</strong>: Custom websites that are responsive, fast, and conversion-driven.</li>
-            <li><strong>Network Solutions</strong>: Secure, scalable networks to keep your business connected.</li>
-        </ul>
-        <a href="services.html" class="button">View Our Services</a>
-    </section>
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="TechSphere Technologies | Home Page" />
+        <meta name="twitter:description" content="Explore TechSphere Technologies for expert IT consulting, web development, and network solutions." />
+        <meta name="twitter:image" content="https://www.techspheretechnologies.com/images/social-share.png" />
 
-    <!-- Portfolio Section -->
-    <section class="fade-left">
-        <h2>Our Portfolio</h2>
-        <p>
-            Browse through our successful projects and see how we turn ideas into reality.
-            <br>
-            Discover how TechSphere Technologies delivers real solutions that drive business growth.
-        </p>
-        <a href="portfolio.html" class="button">View Portfolio</a>
-    </section>
+        <!-- Structured Data (JSON-LD) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "TechSphere Technologies (Pty) Ltd",
+                "url": "https://www.techspheretechnologies.com",
+                "logo": "https://www.techspheretechnologies.com/images/logo.png",
+                "description": "TechSphere Technologies provides IT consulting, web development, and secure network solutions for business growth.",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "info@techspheretechnologies.com",
+                    "contactType": "Customer Support"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/your-link",
+                    "https://www.facebook.com/your-link"
+                ]
+            }
+        </script>
 
-    <!-- Contact Section -->
-    <section class="fade-right">
-        <h2>Contact Us</h2>
-        <p>
-            <strong style="font-size: 20px;">
-                Have a project in mind?
-            </strong>
-            <br>
-            Let’s discuss your goals and explore how we can create lasting solutions for your business success.
-        </p>
-        <a href="contact.html" class="button">Get In Touch</a>
-    </section>
+        <!-- External CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-    <!-- Back to Top Button -->
-    <a href="#" class="back-to-top">Back to Top</a>
-    
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 TechSphere Technologies (Pty) Ltd.</p>
-        <p>All rights reserved.</p>
-    
-        <a class="email-link" href="mailto:info@techspheretechnologies.com">
-            <img src="./assets/mail-icon.png" alt="Email TechSphere Support"> info@techspheretechnologies.com
-        </a>
-    
-        <div class="footer-divider"></div>
-    
-        <a class="email-link" href="mailto:stefan@techspheretechnologies.com">
-            <img src="./assets/mail-icon.png" alt="Email TechSphere Support"> stefan@techspheretechnologies.com
-        </a>
+    <body class="bg-[#111111] bg-fixed bg-cover bg-center bg-no-repeat bg-blend-overlay text-[#e0e0e0] 
+    font-roboto leading-relaxed text-base max-w-7xl mx-auto pt-0 pb-4 px-4 sm:pb-8 sm:px-8 md:pb-12 md:px-12" style="background-image: url('images/watermark.png');">
 
-        <div class="social-footer">
-            <a href="https://github.com/Stefan-TechSphere" target="_blank">
-                <img src="./assets/github-icon.png" alt="GitHub" class="social-icon"> GitHub: Stefan-TechSphere
+        <!-- GTM NoScript -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWT6GL4B" height="0" width="0" style="display:none;visibility:hidden" title=""></iframe></noscript>
+
+        <!-- Navigation -->
+        <nav class="bg-[#1a1a1a] py-4 px-2 mb-10 sticky top-0 z-50 rounded-b-lg shadow-md transition-all duration-300">
+            <div class="flex justify-end md:hidden">
+                <button id="menu-toggle" aria-label="Toggle menu" class="text-white text-3xl">&#9776;</button>
+            </div>
+            <ul id="menu" class="hidden flex-col space-y-3 text-center text-sm text-white mt-4 md:mt-0 md:flex md:flex-row md:space-y-0 md:space-x-8 md:justify-center">
+                <li><a href="index.html" class="border-b-2 border-[#00fff7] pb-1 hover:text-[#00fff7] transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-[#00fff7] transition">About Us</a></li>
+                <li><a href="services.html" class="hover:text-[#00fff7] transition">Services</a></li>
+                <li><a href="portfolio.html" class="hover:text-[#00fff7] transition">Portfolio</a></li>
+                <li><a href="contact.html" class="hover:text-[#00fff7] transition">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="flex flex-col justify-center items-center text-center px-4 py-12 md:py-20 mb-8 rounded-lg shadow-[0_4px_15px_rgba(0,0,0,0.3)] bg-[#111111] bg-cover bg-center bg-fixed text-white fade-up">
+            <a href="index.html" class="inline-block mb-4">
+                <img src="images/logo.png" alt="TechSphere Technologies Logo"
+                class="max-w-[250px] h-auto mb-6 mx-auto cursor-pointer transition-transform transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_15px_rgba(0,255,247,0.5)]">
             </a>
-            <a href="https://www.linkedin.com/in/Stefan-TechSphere/" target="_blank">
-                <img src="./assets/linkedin-icon.png" alt="LinkedIn" class="social-icon"> LinkedIn: Stefan de Bruin
-            </a>
-        </div>
-    </footer>
+            <h1 class="text-3xl md:text-5xl font-bold text-[#00fff7] mb-2 font-orbitron">TechSphere Technologies</h1>
+            <h2 class="text-md md:text-xl text-gray-400 mb-3 font-roboto">Your trusted IT solutions partner.</h2>
+            <p class="text-sm md:text-lg text-gray-400 mb-3 leading-relaxed font-roboto">Innovative solutions, tailored to your business.<br>Elevate your digital world with TechSphere Technologies.</p>
+            <p class="text-sm md:text-lg text-gray-500 mb-6 font-roboto"><strong>Trusted by businesses across South Africa.</strong></p>
+            <a href="contact.html" class="inline-block mt-5 bg-[#00fff7e7] text-[#111111] px-5 py-2.5 rounded-md shadow-[0_4px_10px_rgba(0,255,247,0.5)] transition-all duration-300 font-bold hover:bg-[#1E90FF] hover:shadow-[0_4px_15px_rgba(30,144,255,0.5)] hover:text-white text-sm md:text-base">Get a Quote</a>
+        </header>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-</body>
+        <!-- About Section -->
+        <section class="text-center px-4 py-12 mb-8 rounded-lg shadow-[0_4px_15px_rgba(0,0,0,0.3)] bg-[#1a1a1a] fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#00fff7] mb-5 font-orbitron">About Us</h2>
+            <p class="text-sm md:text-lg text-gray-300 mb-6 leading-relaxed font-roboto">At TechSphere Technologies, we are passionate about turning visions into reality. Our expertise spans IT consulting, web development, and robust network solutions crafted for growth and security.</p>
+            <a href="about.html" class="inline-block mt-5 bg-[#00fff7e7] text-[#111111] px-5 py-2.5 rounded-md shadow-[0_4px_10px_rgba(0,255,247,0.5)] transition-all duration-300 font-bold hover:bg-[#1E90FF] hover:shadow-[0_4px_15px_rgba(30,144,255,0.5)] hover:text-white text-sm md:text-base">Learn More About Us</a>
+        </section>
+
+        <div class="w-4/5 h-[3px] opacity-60 mx-auto my-10 animate-fadeInDivider" style="background: linear-gradient(to right, rgba(0, 122, 120, 0.7), rgba(255, 255, 255, 0.2), rgba(0, 122, 120, 0.7));"></div>
+
+        <!-- Services Section -->
+        <section class="text-center px-4 py-12 mb-8 rounded-lg shadow-[0_4px_15px_rgba(0,0,0,0.3)] bg-[#1a1a1a] fade-left">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#00fff7] mb-4 font-orbitron">Our Services</h2>
+            <ul class="space-y-4 text-sm md:text-lg text-gray-300 leading-relaxed font-roboto">
+                <li><strong class="text-white">IT Consulting:</strong> Strategic advice to help your business thrive in a digital-first world.</li>
+                <li><strong class="text-white">Web Development:</strong> Custom websites that are responsive, fast, and conversion-driven.</li>
+                <li><strong class="text-white">Network Solutions:</strong> Secure, scalable networks to keep your business connected.</li>
+            </ul>
+            <a href="services.html" class="inline-block mt-5 bg-[#00fff7e7] text-[#111111] px-5 py-2.5 rounded-md shadow-[0_4px_10px_rgba(0,255,247,0.5)] transition-all duration-300 font-bold hover:bg-[#1E90FF] hover:shadow-[0_4px_15px_rgba(30,144,255,0.5)] hover:text-white text-sm md:text-base">View Our Services</a>
+        </section>
+
+        <div class="w-4/5 h-[3px] opacity-60 mx-auto my-10 animate-fadeInDivider" style="background: linear-gradient(to right, rgba(0, 122, 120, 0.7), rgba(255, 255, 255, 0.2), rgba(0, 122, 120, 0.7));"></div>
+
+        <!-- Portfolio Section -->
+        <section class="text-center px-4 py-12 mb-8 rounded-lg shadow-[0_4px_15px_rgba(0,0,0,0.3)] bg-[#1a1a1a] fade-down">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#00fff7] mb-4 font-orbitron">Our Portfolio</h2>
+            <p class="text-sm md:text-lg text-gray-300 mb-6 leading-relaxed font-roboto">Browse through our successful projects and see how we turn ideas into reality.<br>Discover how TechSphere Technologies delivers real solutions that drive business growth.</p>
+            <a href="portfolio.html" class="inline-block mt-5 bg-[#00fff7e7] text-[#111111] px-5 py-2.5 rounded-md shadow-[0_4px_10px_rgba(0,255,247,0.5)] transition-all duration-300 font-bold hover:bg-[#1E90FF] hover:shadow-[0_4px_15px_rgba(30,144,255,0.5)] hover:text-white text-sm md:text-base">View Portfolio</a>
+        </section>
+
+        <div class="w-4/5 h-[3px] opacity-60 mx-auto my-10 animate-fadeInDivider" style="background: linear-gradient(to right, rgba(0, 122, 120, 0.7), rgba(255, 255, 255, 0.2), rgba(0, 122, 120, 0.7));"></div>
+
+        <!-- Contact Section -->
+        <section class="text-center px-4 py-12 mb-8 rounded-lg shadow-[0_4px_15px_rgba(0,0,0,0.3)] bg-[#1a1a1a] fade-right">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#00fff7] mb-4 font-orbitron">Contact Us</h2>
+            <p class="text-sm md:text-lg text-gray-300 mb-6 leading-relaxed font-roboto">
+                <strong class="text-white text-base md:text-lg">Have a project in mind?</strong><br>
+                Let’s discuss your goals and explore how we can create lasting solutions for your business success.
+            </p>
+            <a href="contact.html" class="inline-block mt-5 bg-[#00fff7e7] text-[#111111] px-5 py-2.5 rounded-md shadow-[0_4px_10px_rgba(0,255,247,0.5)] transition-all duration-300 font-bold hover:bg-[#1E90FF] hover:shadow-[0_4px_15px_rgba(30,144,255,0.5)] hover:text-white text-sm md:text-base">Get In Touch</a>
+        </section>
+
+        <div class="w-4/5 h-[3px] opacity-60 mx-auto my-10 animate-fadeInDivider" style="background: linear-gradient(to right, rgba(0, 122, 120, 0.7), rgba(255, 255, 255, 0.2), rgba(0, 122, 120, 0.7));"></div>
+
+        <!-- Back to Top Button -->
+        <a href="#" class="fixed bottom-[100px] right-10 bg-[#111111] text-[#007a78] px-4 py-3 rounded-full text-center no-underline text-[20px] shadow-[0_4px_10px_rgba(0,255,247,0.5)] opacity-0 invisible translate-y-5 transition-all duration-400 z-50 back-to-top hover:bg-[#00fff7e7] hover:text-white hover:shadow-[0_4px_15px_rgba(30,144,255,0.5)]">Back to Top</a>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-400 text-sm px-4 py-8 bg-[#1a1a1a]">
+            <p class="mb-1">© 2025 TechSphere Technologies (Pty) Ltd.</p>
+            <p class="mb-4">All rights reserved.</p>
+
+            <!-- Emails -->
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-6 mb-4">
+
+                <a class="flex items-center space-x-2 hover:text-white transition" href="mailto:info@techspheretechnologies.com">
+                    <img src="images/mail-icon.png" alt="Email TechSphere Support" class="w-5 h-5">
+                    <span>info@techspheretechnologies.com</span>
+                </a>
+
+                <div class="hidden md:block w-px bg-gray-600 h-5"></div>
+
+                <a class="flex items-center space-x-2 hover:text-white transition" href="mailto:stefan@techspheretechnologies.com">
+                    <img src="images/mail-icon.png" alt="Email Stefan TechSphere" class="w-5 h-5">
+                    <span>stefan@techspheretechnologies.com</span>
+                </a>
+
+            </div>
+
+            <!-- Optional Divider (looks cleaner without, but you can keep if you like) -->
+            <div class="w-24 mx-auto border-t border-gray-700 opacity-50"></div>
+
+        </footer>
+
+        <!-- External JS (keep for toggle etc.) -->
+        <script src="js/script.js"></script>
+    </body>
 </html>
