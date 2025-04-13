@@ -507,7 +507,7 @@ nav.scrolled {
     }
 }
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
     body {
         line-height: 1.6;
         padding: 15px;
@@ -548,7 +548,7 @@ nav.scrolled {
     }
 
     header h1 {
-        font-size: 2800px;
+        font-size: 28px;
         margin-bottom: 8px;
     }
 
@@ -628,7 +628,7 @@ nav.scrolled {
         animation: none; /* Optional: cleaner without pulse on mobile 
         transition: none;
         bottom: 100px; /* Extra safe space on mobile 
-    }*/
+    }
 
     .back-to-top.show {
         opacity: 0;
@@ -676,7 +676,7 @@ nav.scrolled {
     }
 
     .portfolio-grid {
-        grid-template-columns: 1fr; /* Stack vertically on small screens */
+        grid-template-columns: 1fr; /* Stack vertically on small screens 
     }
 
     .pricing-card.highlight::before {
@@ -692,7 +692,7 @@ nav.scrolled {
         left: -30px;
         top: 17px;
     }
-}
+}*/
 
 /* Base animate class */
 .animate {
