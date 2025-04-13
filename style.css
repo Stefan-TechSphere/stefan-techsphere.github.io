@@ -1369,7 +1369,7 @@ html {
 }
 
 .social-footer a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     text-decoration: none;
     color: #00b7b1; /* Adjust to match your theme */
@@ -1382,7 +1382,7 @@ html {
 }
 
 .social-footer img.social-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-right: 8px;
 }
