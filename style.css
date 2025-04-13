@@ -1362,3 +1362,26 @@ html {
     margin-top: 1px; /* fine-tune alignment */
     flex-shrink: 0;
 }
+
+.social-footer {
+    margin-top: 20px;
+}
+
+.social-footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #00b7b1; /* Adjust to match your theme */
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-footer a:hover {
+    color: #ffffff;
+}
+
+.social-footer img.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
